@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+    <style>
+        body {
+            background-color: rgb(1, 79, 144);
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificar nacionalidade</h1>
+
+    Qual o seu nome?<br><input type="text" name="txtnome" id="txtnome"><br><br>
+    Qual o seu pais de orígem?<br><input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="paisstatus"></div>
+    <div id="res"></div>
+    
+    <script>
+        function verificar() {
+            paisstatus.innerHTML = '';
+            var tnome = document.querySelector('input#txtnome')
+            var txtn = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+            var po = (txtn.value)
+            res.innerHTML = `<p>Seu pais de orígem é: <strong>${po}!</strong></p>`
+            
+
+            if (po.toLowerCase() != `Brasil`) {
+                res.innerHTML = `<p id="brasil">Bem vindo ao Brasil ${tnome.value}!</p>` 
+                paisstatus.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+                
+            }
+            else {
+                res.innerHTML = `<p>Bem vindo de volta ${tnome.value}!</p>`
+                paisstatus.innerHTML += `<p>Você é Brasileiro!</p>`
+                
+            }
+    }
+    </script>
+</body>
+</html>

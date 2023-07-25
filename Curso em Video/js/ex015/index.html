@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="askresult">
+            <p>Ano de Nascimento:
+                <input type="number" id="ano" name="ano" placeholder="Ano de Nascimento">
+            </p>
+            <p>Sexo:
+                <input type="radio" id="masculino" name="sexselector" value="Masculino" checked>
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="sexselector" value="Feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            
+        </div>
+        <p id="submit"><input id="verificar" type="submit" value="Verificar" onclick="verificar()"></p>
+        <div id="resultadoimg">
+            <div id="msg">Preencha os dados acima para ver o resultado!</div>
+            <img id="profile" src="img/empty.png" alt="Perfil">
+        </div><strong></strong>
+    </section>
+    <footer>
+        <p>&copy; BlackList<small>&trade;</small></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

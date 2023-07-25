@@ -1,0 +1,34 @@
+body {
+    background: rgb(83,21,109);
+    background: radial-gradient(circle, rgba(83,21,109,1) 0%, rgba(40,24,92,1) 100%);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+input::placeholder {
+    font-style: italic;
+  }
+#res {
+    text-align: center;
+}
+
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

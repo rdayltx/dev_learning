@@ -1,0 +1,7 @@
+#pizza-img {
+    width: 255px;
+    height: 255px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 50%);
+    transition: clip-path 1s;
+  }
+  
