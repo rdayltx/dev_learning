@@ -24,3 +24,7 @@ A tag `<hr>` fez aparecer uma linha horizontal
 
 `&lt;` Menor que (Less than)    "<" 
 `&gt;` Maior que (Greater Than) ">"
+
+
+A tag <picture> em HTML é usada para fornecer uma maneira flexível de exibir imagens, permitindo especificar várias fontes de imagem para diferentes cenários de visualização.
+
